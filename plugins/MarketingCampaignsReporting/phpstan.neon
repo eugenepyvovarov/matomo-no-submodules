@@ -1,0 +1,17 @@
+parameters:
+    level: 1
+    phpVersion: 80100
+    tmpDir: /tmp/phpstan/MarketingCampaignsReporting/main
+    paths:
+        - .
+    excludePaths:
+        - tests/*
+        - github-action-tests/ (?)
+    bootstrapFiles:
+        - ../../bootstrap-phpstan.php
+    universalObjectCratesClasses:
+        - Piwik\Config
+        - Piwik\View
+        - Piwik\ViewDataTable\Config
+    scanDirectories:
+        - ../../
